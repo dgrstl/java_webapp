@@ -42,7 +42,7 @@ public class TestRoutes
 
     private TestResponse request(String method, String path) throws java.io.IOException {
 		try {
-			URL url = new URL("http://localhost:9999" + path);
+			URL url = new URL("http://localhost:9998" + path);
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod(method);
 			connection.setDoOutput(true);
